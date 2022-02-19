@@ -1,0 +1,50 @@
+﻿@model Creta.Models.CdacCrud
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CdacCrud</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JavaMarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JavaMarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DotNetMarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DotNetMarks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
